@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyCalculator</title>
+</head>
+<body id="body">
+    <nav class="navbar"><h1><u></u>CALCULATOR</u> -- By Harpreet Singh</h1></nav>
+    <hr>
+    <div class="mycalculator">
+        <div type="text" id="screen"></div>
+        <div class="btnBox">
+            <button class="science" id="(">(</button>
+            <button class="science" id=")">)</button>
+            <button class="science" id="his"><img src="images.png" id="hisIcon"></button>
+            <button class="uBtn" id="AC">AC</button>
+            <button class="uBtn" id="back" style="padding-top:0vh;padding-bottom:2vh;">⌫</button>
+            <button class="btn" id="%">%</button>
+            <button class="btn" id="/">/</button>
+        </div>
+        <div class="btnBox">
+            <button class="btn science" id="power">^</button>
+            <button class="science" id="exp">exp</button>
+            <button class="science" id="log">ln</button>
+            <button class="btn" id="7">7</button>
+            <button class="btn" id="8">8</button>
+            <button class="btn" id="9">9</button>
+            <button class="btn" id="*">*</button>
+        </div>
+        <div class="btnBox">
+            <button class="science" id="sqrt">√</button>
+            <button class="science" id="fact">!</button>
+            <button class="science" id="abs">Deg</button>
+            <button class="btn" id="4">4</button>
+            <button class="btn" id="5">5</button>
+            <button class="btn" id="6">6</button>
+            <button class="btn" id="-">-</button>
+        </div>
+        <div class="btnBox">
+            <button class="science" id="sin">sin</button>
+            <button class="science" id="cos">cos</button>
+            <button class="science" id="tan">tan</button>
+            <button class="btn" id="1">1</button>
+            <button class="btn" id="2">2</button>
+            <button class="btn" id="3">3</button>
+            <button class="btn" id="+">+</button>
+        </div>
+        <div class="btnBox">
+            <button class="science" id="asin">asin</button>
+            <button class="science" id="acos">acos</button>
+            <button class="science" id="atan">atan</button>
+            <button class="btn" id="0">0</button>
+            <button class="btn" id="00">00</button>
+            <button class="btn" id=".">.</button>
+            <button class="uBtn" id="=">=</button>
+        </div>
+        <div id="history">
+            <div id="down"><img src="download.png" id="downImage"></div>
+            <div id="historyText">
+        </div>
+        </div>
+    </div>
+    <div id="graphing" style="height:85vh;width:75vw;display:none;margin-top: 2vh;margin-left:2vw;"></div>
+    <script src="https://www.desmos.com/api/v1.7/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <script>
+        var elt = document.getElementById('graphing');
+        var calculator = Desmos.GraphingCalculator(elt);
+        calculator.setExpression({ id: 'graph1', latex: 'y=x' });
+      </script>
+    <div class="toggleButtons" style="display:inline-block;margin-left: 1vw;">
+        <div class="toggle">
+            <label class="buttonText">SIMPLE</label>
+            <label class="switch">
+                <input type="checkbox" id="scientific">
+                <span class="slider round"></span>
+            </label>
+            <label class="buttonText">SCIENTIFIC</label>
+        </div>
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox" id="graphButton">
+                <span class="slider round"></span>
+            </label>
+            <label class="buttonText">&nbsp;&nbsp; GRAPHING</label>
+        </div>
+        <div class="toggle">
+            <label class="buttonText">LIGHT MODE</label>
+            <label class="switch">
+                <input type="checkbox" id="lightDark">
+                <span class="slider round"></span>
+            </label>
+            <label class="buttonText">DARK MODE</label>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+        <script>
+    </script>
+       <script src="https://kit.fontawesome.com/41d930bc9d.js" crossorigin="anonymous"></script>
+</body>
+</html>

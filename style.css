@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    overflow: auto;
+    transition: all 1s ease-in-out;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+.navbar{
+    background:radial-gradient(black,rgb(0, 255, 170)) ;
+    color:antiquewhite;
+    height:7vh;
+    width:100vw;
+    padding: 1vh 2vw;
+    text-align: center;
+    font-size: 2vw;
+    border:2px black solid;
+    box-shadow: 0px 3px 3px 3px violet;
+}
+.navbar h1{
+    animation: har 2s ease-in-out infinite;
+}
+@keyframes har{
+    0%{
+        color:antiquewhite;
+    }
+    50%{
+        color:rgb(121, 222, 253);
+    }
+    100%{
+        color:antiquewhite;
+    }
+}
+.mycalculator{
+    background: linear-gradient(rgb(25, 3, 85),rgb(0, 53, 0));
+    margin-left:10vw;
+    width:35vw;
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    margin-top:3vh;
+    padding:2vh 2vw;
+    border: black 3px solid;
+    box-shadow: 0px 0px 3px 3px rgb(245, 134, 245);
+    border-radius: 30px;
+    display: inline-block;
+    transition:all 1s ease-in-out;
+}
+.btnBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#screen{
+    background: radial-gradient(rgb(255, 240, 242),rgb(250, 198, 198));
+    height:12.5vh;
+    overflow:auto;
+    font-size: 8.95vh;
+    text-align: right;
+    padding: 2vh;
+    transition: all 1s ease-in-out;
+    border: black solid 2px;
+    border-radius: 20px;
+    overflow-y: hidden;
+    color:black;
+    }
+.btn , .uBtn, .science{
+    font-size: 2vw;
+    margin-top:2.5vh;
+    height:10vh;
+    padding:2vh;
+    text-align: center;
+    width:7vw;
+    padding:1vh 1vh;
+    background:radial-gradient(rgb(180, 255, 130),rgb(191, 191, 252));
+    color:rgb(37, 37, 37);
+    border: wheat solid 3px;
+    border-radius: 30px;
+    transition: color 1s ease-in-out;
+}
+.btn:hover, .uBtn:hover, .science:hover{
+    cursor: pointer;
+    color: black;
+    border-color: blue;
+}
+.btn:active, .uBtn:active{
+    cursor: pointer;
+    color: black;
+    border-color: blue;
+}
+.toggle{
+    margin-bottom: 2vh;
+}
+.navbar h1{
+    display:inline-block;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;}
+.buttonText{
+    color:black;
+    font-size: 1vw;
+    font-family: cursive;
+}
+.science{
+    display:none;
+}
+.toggle{
+    text-align: right;
+    margin-top: 5vh;
+}
+#history{
+    background: linear-gradient(lightblue,gray);
+    height:0vh;
+    width:57vw;
+    margin:2vh 1.5vw;
+    border: 2px black solid;
+    border-radius: 5px;
+    display: none;
+    transition: all 5s ease-in-out 0s;
+}
+#down{
+    background: radial-gradient(white,rgb(225, 225, 254));
+    box-shadow: 0px 4px 4px 4px rgb(44, 44, 44);
+    transition: all 1s ease-in-out;
+}
+#downImage{
+    height:4vh;
+    width:5vw;
+    border-radius: 50%;
+    display:inline-block;
+    margin:1vh 26vw;
+    transition: all 1s ease-in-out;
+}
+#downImage:hover{
+    cursor: pointer;
+}
+#historyText{
+    overflow-y: auto;
+    height:0vh;
+    margin-top: 0.5vh;
+    transition: all 1s ease-in-out;
+}
+.historyItem{
+    padding-top:1vh;
+    font-size: 2vw;
+    border-bottom: black solid 2px;
+    transition: all 1s ease-in-out;
+}
+#hisIcon{
+    height:7vh;
+    width:5vw;
+    border-radius: 50%;
+    margin-left: 0vw;
+    margin-bottom: 0vh;
+}
+#historyText::-webkit-scrollbar{
+    display:none;
+}
