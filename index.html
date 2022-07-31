@@ -8,7 +8,7 @@
     <title>MyCalculator</title>
 </head>
 <body id="body">
-    <nav class="navbar"><h1><u></u>CALCULATOR</u> -- By Harpreet Singh</h1></nav>
+    <nav class="navbar"><h1><u></u>CALCULATOR</u> -- By Gurjot Singh</h1></nav>
     <hr>
     <div class="mycalculator">
         <div type="text" id="screen"></div>
@@ -49,9 +49,9 @@
             <button class="btn" id="+">+</button>
         </div>
         <div class="btnBox">
-            <button class="science" id="asin">asin</button>
-            <button class="science" id="acos">acos</button>
-            <button class="science" id="atan">atan</button>
+            <button class="science" id="asin">sin<sup>-1</sup></button>
+            <button class="science" id="acos">cos<sup>-1</sup></button>
+            <button class="science" id="atan">tan<sup>-1</sup></button>
             <button class="btn" id="0">0</button>
             <button class="btn" id="00">00</button>
             <button class="btn" id=".">.</button>
@@ -71,6 +71,15 @@
         calculator.setExpression({ id: 'graph1', latex: 'y=x' });
       </script>
     <div class="toggleButtons" style="display:inline-block;margin-left: 1vw;">
+        <div id="features">
+            <h3>FEATURES</h3>
+            <ul type="none">
+            <li>View history with <img src="images.png"></li>
+            <li>Works with keyboard</li>
+            <li>degree radian</li>
+            <li>Dark mode available</li>
+            <li>Graph is available</li>
+        </ul></div>
         <div class="toggle">
             <label class="buttonText">SIMPLE</label>
             <label class="switch">

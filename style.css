@@ -219,3 +219,34 @@ body::-webkit-scrollbar{
 #historyText::-webkit-scrollbar{
     display:none;
 }
+#features{
+    text-align: center;
+    font-size: 3vh;
+    font-family:'Times New Roman, Times, serif';
+    margin-bottom: 10vh;
+    border:rgb(0, 191, 255) solid 5px;
+    border-radius: 30%;
+    border-bottom-right-radius: 0px;
+    padding:1vw;
+    animation: forFeatures 3s ease-in-out 0s infinite;
+}
+#features li,#features h3{
+    margin: 1vh 0;
+}
+@keyframes forFeatures{
+    0%{
+        border:rgb(0, 191, 255) solid 5px;
+    }
+    50%{
+        border:rgb(255, 131, 151) solid 5px;
+    }
+    100%{
+        border:rgb(0, 191, 255) solid 5px;
+    }
+}
+#features img{
+    border: rgb(39, 39, 67) solid 2px;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+}
