@@ -229,6 +229,7 @@ body::-webkit-scrollbar{
     border-bottom-right-radius: 0px;
     padding:1vw;
     animation: forFeatures 3s ease-in-out 0s infinite;
+    transform: all 1s ease-in-out;
 }
 #features li,#features h3{
     margin: 1vh 0;
